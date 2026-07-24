@@ -1,0 +1,43 @@
+generated: '2026-07-18'
+method: searched
+source: live probe of /.well-known/ on provider hosts
+note: 'No genuine well-known discovery documents were found. The marketing host
+  brighthire.com returns 404 for all probed paths. The application host
+  app.brighthire.ai returns HTTP 200 for every path, but the body is the SPA
+  HTML app shell (content-type text/html), not a real discovery document — these
+  are catch-all false positives and were NOT saved as artifacts.'
+hosts:
+- host: https://brighthire.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://app.brighthire.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    genuine: false
+    reason: SPA HTML app shell (text/html), not a security.txt
+  - path: /.well-known/openid-configuration
+    status: 200
+    genuine: false
+    reason: SPA HTML app shell (text/html), not OIDC discovery JSON
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    genuine: false
+    reason: SPA HTML app shell (text/html), not RFC 8414 metadata
+  - path: /.well-known/api-catalog
+    status: 200
+    genuine: false
+    reason: SPA HTML app shell (text/html), not an api-catalog
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    genuine: false
+    reason: SPA HTML app shell (text/html), not an ai-plugin manifest

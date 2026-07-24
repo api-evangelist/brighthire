@@ -1,8 +1,26 @@
 aid: brighthire
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/brighthire.png
 name: BrightHire
-description: 'BrightHire is a company surfaced as a portfolio company of index-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: business-applications. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'BrightHire is an interview intelligence platform that helps talent and
+  hiring teams run more consistent, equitable, and effective hiring processes. Its
+  AI copilots and agents support the full interview lifecycle — interview planning,
+  AI-assisted screening interviews, automated interview notes and highlights, structured
+  decision support, and interviewer coaching — with deep integrations into applicant
+  tracking systems, video conferencing, and collaboration tools. BrightHire is a closed
+  SaaS product with no public developer API; it exposes value through partner ATS,
+  calendar, and conferencing integrations rather than a documented API surface. Added
+  to the API Evangelist network as an index-ventures portfolio company.'
 url: https://raw.githubusercontent.com/api-evangelist/brighthire/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Business Applications
+- Recruiting
+- Hiring
+- Interview Intelligence
+- Human Resources
+- Talent Acquisition
+- Artificial Intelligence
+- HR Tech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: TrustCenter
+  url: security/brighthire-trust-center.yml
+- type: DomainSecurity
+  url: security/brighthire-domain-security.yml
 - type: Website
-  url: https://brighthire.ai/
+  url: https://brighthire.com/
+- type: Integrations
+  url: https://brighthire.com/product/integrations/
+- type: Pricing
+  url: https://brighthire.com/pricing/
+- type: Login
+  url: https://app.brighthire.ai/
+- type: TermsOfService
+  url: https://brighthire.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://brighthire.com/privacy-policy/
+- type: Blog
+  url: https://brighthire.com/blog/
+- type: Compliance
+  url: https://brighthire.com/compliance-and-security/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

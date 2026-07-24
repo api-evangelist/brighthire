@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+source: https://trust.brighthire.com/
+url: https://trust.brighthire.com/
+platform: SafeBase
+certifications:
+- SOC 2 Type 2
+- GDPR
+- CCPA
+programs:
+- Independent third-party AI Governance framework attestation
+- Annual independent third-party AI bias audits (partner: babl.ai)
+- Role-based access controls (RBAC)
+- SSO / identity-provider support
+- Customizable data retention
+notes: BrightHire does not use customer data to train external AI models. Compliance
+  contact published as brightlights@brighthire.ai.
+evidence:
+- source: https://trust.brighthire.com/
+  keywords:
+  - soc 2 type 2
+  - gdpr
+  - ccpa
+  - trust center
+  - safebase
+- source: https://brighthire.com/compliance-and-security/
+  keywords:
+  - soc 2 type ii
+  - gdpr
+  - ccpa
+  - ai governance
+  - ai bias audit
