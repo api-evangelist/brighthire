@@ -32,3 +32,37 @@ plans:
 - name: Enterprises
   price_text: Request a Demo
   period: none
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: BrightHire Screen
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Recruiters
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Teams
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Enterprises
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
